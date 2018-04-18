@@ -31,7 +31,7 @@
 </div>
 
 
-<div id="impress" data-autoplay="200">
+<div id="impress">
 
    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
         <span style="font-size: 20px">CMPE 255 Short Story</span>
@@ -74,16 +74,55 @@
         <strong>Amount of funding</strong> in the near future</p>
     </div>
 
-    <div id="its" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="2">
-        Two-level time series:
-        Campaign Level Forecasts (f<sup>c</sup>)
-        Perk Level base forecasts (f<sup>p</sup>)
+    <div class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="2">
+        <b>Method</b>
+        <p style="font-size: 30px">Two-level time series:<br/>
+        Campaign Level Forecasts <br/> 
+        Perk Level base forecasts <br/><br/>
+            Are done using 2 regression models:<br/> 
+        1. Single Regression for Perks and Campaigns<br/> 
+        2. Switching Regression where Perks and Campaigns are put into 
+        different clusters with different regression models.<img width=20% src="img/Cluster.JPG"> <br/><br/>
+        Results are combined using a Revision Matrix
+        </p>
     </div>
     
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        
+    <div class="step"  data-x="6000" data-y="3325" data-rotate="300" data-scale="3">
+        System Architecture
+        <img width=120% margin-left="-20%" src="img/architecture.JPG">
     </div>
 
+    
+    <div class="step" data-x="3500" data-y="-2000" data-rotate="20" data-scale="4">
+        Single Regression Model
+        <img width=50% src="img/SRPerkform.JPG">
+        <img width=50% src="img/SRCampform.JPG">
+        <p align="left">Switching Regression Model</p>
+            <img width="50%" src="img/Switching.JPG">
+        <br/>Notations
+        <img src="img/legend.JPG">
+    </div>
+    
+    <div id="one-more-thing" class="step" data-x="9000" data-y="1000" data-scale="2">
+        <p>Experiment 
+        <img width="20%" src="img/Indiegogo_logo.png"> <br/>
+        <img width="45%" src="img/Datapart.JPG">&nbsp;<img width="45%" src="img/Time.JPG"></p>
+        <img width="110%" src="img/result.JPG">
+    </div>
+
+    <div id="its-in-3d" class="step" data-x="9000" data-y="2000" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p style="font-size: 30px">Conclusion
+        <br/>1. The adjacent daily funding amount is highly correlated
+        <br/>2. The series of both campaigns and perks at different funding time have different dynamic patterns
+        <br/>3. While this model needs significantly more training time than other individual models, it is seen to perform better by combining results.
+        <br/>4. There is a large scope and utility in Crowdfunding analysis.
+        </p>
+    </div>
+    
+    
+     <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
+    </div>
+    
 <!--    
     
 
